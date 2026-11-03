@@ -44,6 +44,9 @@ module.exports = function(grunt) {
       all: ['dev', 'dist']
     },
     sass: {
+      options: {
+        implementation: require("sass")
+      },
       dev: {
         options: {
           includePaths: ['<%= config.cssSrcDir %>'],
